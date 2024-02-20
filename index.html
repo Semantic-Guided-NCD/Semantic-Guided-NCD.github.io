@@ -27,7 +27,7 @@
     <div id="content-inner">
 
         <div class="section head">
-            <h1>A Unified Objective for Novel Class Discovery</h1>
+            <h1>Semantic-Guided Novel Category Discovery</h1>
 
             <div class="authors">
                 <a href="https://scholar.google.com/citations?user=OQMtSKIAAAAJ&hl=en">Enrico Fini</a><sup>1</sup>&nbsp;
@@ -59,7 +59,7 @@
             <h2>Abstract</h2>
             <br>
             <p>
-                In this paper, we study the problem of Novel Class Discovery (NCD). NCD aims at inferring novel object categories in an unlabeled set by leveraging from prior knowledge of a labeled set containing different, but related classes. Existing approaches tackle this problem by considering multiple objective functions, usually involving specialized loss terms for the labeled and the unlabeled samples respectively, and often requiring auxiliary regularization terms. In this paper we depart from this traditional scheme and introduce a UNified Objective function (UNO) for discovering novel classes, with the explicit purpose of favoring synergy between supervised and unsupervised learning. Using a multi-view self-labeling strategy, we generate pseudo-labels that can be treated homogeneously with ground truth labels. This leads to a single classification objective operating on both known and unknown classes. Despite its simplicity, UNO outperforms the state of the art by a significant margin on several benchmarks (≈+10\% on CIFAR-100 and +8\% on ImageNet).</p>
+                The Novel Category Discovery problem aims to cluster an unlabeled set with the help of a labeled set consisting of disjoint but related classes. However, existing models treat class names as discrete one-hot labels and ignore the semantic understanding of these classes. In this paper, we propose a new setting named Semantic-guided Novel Category Discovery (SNCD), which requires the model to not only cluster the unlabeled images but also semantically recognize these images based on a set of their class names. The first challenge we confront pertains to effectively leveraging the class names of unlabeled images, given the inherent gap between the visual and linguistic domains. To address this issue, we incorporate a semantic-aware recognition mechanism. This is achieved by constructing dynamic class-wise visual prototypes as well as a semantic similarity matrix that enables the projection of visual features into the semantic space. The second challenge originates from the granularity disparity between the classification and clustering tasks. To deal with this, we develop a semantic-aware clustering process to facilitate the exchange of knowledge between the two tasks. Through extensive experiments, we demonstrate the mutual benefits of the recognition and clustering tasks, which can be jointly optimized. Experimental results on multiple datasets confirm the effectiveness of our proposed method.</p>
 
         </div>
 
